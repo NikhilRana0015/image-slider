@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="slider-container">
+        <div class="slide active">
+            <img src="images/image2.jpg" >
+            <div class="slide-content">
+                <h2 class="slide-title">Serene Mountains</h2>
+                <h4 class="slide-subtitle">Explore the Heights</h4>
+                <p class="slide-description">Experience the breathtaking views of untouched alpine peaks and crisp mountain air.</p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="images/image1.jpg">
+            <div class="slide-content">
+                <h2 class="slide-title">Deep Blue Ocean</h2>
+                <h4 class="slide-subtitle">Dive into the Unknown</h4>
+                <p class="slide-description">Discover coastal beauty where vibrant marine ecosystems meet endless gold horizons.</p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="images/image3.jpg">
+            <div class="slide-content">
+                <h2 class="slide-title">Enchanted Forest</h2>
+                <h4 class="slide-subtitle">Walk Among Giants</h4>
+                <p class="slide-description">Lose yourself in dense, green woodlands rich with mystery and the soothing sounds of nature.</p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="images/image4.jpg">
+            <div class="slide-content">
+                <h2 class="slide-title">Golden Desert</h2>
+                <h4 class="slide-subtitle">Endless Horizons</h4>
+                <p class="slide-description">Witness shifting sands and stunning, cinematic sunrises stretching across vast desert dunes.</p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="images/image5.jpg">
+            <div class="slide-content">
+                <h2 class="slide-title">Cyber City</h2>
+                <h4 class="slide-subtitle">The Urban Jungle</h4>
+                <p class="slide-description">Navigate the electric energy of neon-drenched skylines pulsing with modern architecture.</p>
+            </div>
+        </div>
+
+        <button class="nav-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="nav-btn next" onclick="changeSlide(1)">&#10095;</button>
+
+        <div class="dots-container">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
